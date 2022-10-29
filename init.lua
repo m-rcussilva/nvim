@@ -1,0 +1,8 @@
+require("ms.plugins-setup")
+require("ms.core.options")
+require("ms.core.keymaps")
+require("ms.core.colorscheme")
+require("ms.plugins.comment")
+require("ms.plugins.nvtree")
+require("ms.plugins.lualine")
+require("ms.plugins.barbar-config")
