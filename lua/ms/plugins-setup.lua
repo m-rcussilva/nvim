@@ -34,8 +34,8 @@ return packer.startup(function(use)
     use("nvim-tree/nvim-tree.lua") -- File explorer
     use("romgrk/barbar.nvim") -- Tabline
     use("nvim-lualine/lualine.nvim") -- Status line
+    use({"nvim-telescope/telescope.nvim", branch = "0.1.x"}) -- Fuzzy finding
     use({"nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- Fuzzy finding
-    use({"nvim-telescope/telescope.nvim", branch = "0.1.0"}) -- Fuzzy finding
     use("hrsh7th/nvim-cmp") -- Autocompletion
     use("hrsh7th/cmp-buffer") -- Autocompletion
     use("hrsh7th/cmp-path") -- Autocompletion
@@ -44,7 +44,7 @@ return packer.startup(function(use)
     use("rafamadriz/friendly-snippets") -- Snippets
 
     use("williamboman/mason.nvim") -- LSP servers
-    use("williamboman/mason-lspconfig.nvim") 
+    use("williamboman/mason-lspconfig.nvim")
     use("neovim/nvim-lspconfig") -- Configuration for nvim LSP
     use("hrsh7th/cmp-nvim-lsp")
     use({ "glepnir/lspsaga.nvim", branch = "main" })
@@ -61,8 +61,9 @@ return packer.startup(function(use)
 
     use("windwp/nvim-autopairs") -- autopairs
     use("windwp/nvim-ts-autotag") -- autotag
-    use({ "akinsho/toggleterm.nvim", tag = "*" })
-    use("norcalli/nvim-colorizer.lua")
+    use({ "akinsho/toggleterm.nvim", tag = "*" }) -- Toggle terminal
+    use("norcalli/nvim-colorizer.lua") -- Colorizer for normal and hex colors
+    use("Olical/conjure") -- Interactive evaluation for Clojure
 
     if packer_bootstrap then
         require("packer").sync()
