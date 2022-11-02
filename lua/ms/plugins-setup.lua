@@ -43,7 +43,7 @@ return packer.startup(function(use)
     use("saadparwaiz1/cmp_luasnip") -- Snippets
     use("rafamadriz/friendly-snippets") -- Snippets
 
-    use("williamboman/mason.nvim") -- LSP servers
+    use("williamboman/mason.nvim") -- LSP servers, linters and formatters
     use("williamboman/mason-lspconfig.nvim")
     use("neovim/nvim-lspconfig") -- Configuration for nvim LSP
     use("hrsh7th/cmp-nvim-lsp")
@@ -64,6 +64,8 @@ return packer.startup(function(use)
     use({ "akinsho/toggleterm.nvim", tag = "*" }) -- Toggle terminal
     use("norcalli/nvim-colorizer.lua") -- Colorizer for normal and hex colors
     use("Olical/conjure") -- Interactive evaluation for Clojure
+    use("jose-elias-alvarez/null-ls.nvim") -- Formating & Linting
+    use("jayp0521/mason-null-ls.nvim") -- Formating & Linting 
 
     if packer_bootstrap then
         require("packer").sync()
