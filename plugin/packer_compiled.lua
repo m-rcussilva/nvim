@@ -119,6 +119,16 @@ _G.packer_plugins = {
     path = "/Users/ms/.local/share/nvim/site/pack/packer/start/friendly-snippets",
     url = "https://github.com/rafamadriz/friendly-snippets"
   },
+  ["go.nvim"] = {
+    loaded = true,
+    path = "/Users/ms/.local/share/nvim/site/pack/packer/start/go.nvim",
+    url = "https://github.com/ray-x/go.nvim"
+  },
+  ["guihua.lua"] = {
+    loaded = true,
+    path = "/Users/ms/.local/share/nvim/site/pack/packer/start/guihua.lua",
+    url = "https://github.com/ray-x/guihua.lua"
+  },
   ["kanagawa.nvim"] = {
     loaded = true,
     path = "/Users/ms/.local/share/nvim/site/pack/packer/start/kanagawa.nvim",
