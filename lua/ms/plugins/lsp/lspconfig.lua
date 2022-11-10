@@ -99,3 +99,15 @@ lspconfig["gopls"].setup({
     on_attach = on_attach,
     filetypes = { "go", "gomod", "gowork", "gotmpl" },
 })
+
+lspconfig["ruby_ls"].setup({
+    capabilities = capabilities,
+    on_attach = on_attach,
+    cmd = { "ruby-lsp" },
+    filetypes = { "ruby" },
+    init_options = {
+        {
+            enabledFeatures = { "codeActions", "diagnostics", "documentHighlights", "documentSymbols", "formatting", "inlayHint" }
+        }
+    }
+})
