@@ -16,12 +16,6 @@ if not mason_null_ls_status then
 	return
 end
 
--- import mason-null-ls plugin safely
--- local mason_null_ls_status, mason_null_ls = pcall(require, "mason-null-ls")
--- if not mason_null_ls_status then
--- 	return
--- end
-
 -- enable mason
 mason.setup()
 
@@ -32,8 +26,8 @@ mason_lspconfig.setup({
 		"html",
 		"cssls",
 		"sumneko_lua",
-        "clojure_lsp",
-        "jdtls",
+		"clojure_lsp",
+		"jdtls",
 	},
 	-- auto-install configured servers (with lspconfig)
 	-- automatic_installation = true, -- not the same as ensure_installed
@@ -45,7 +39,7 @@ mason_null_ls.setup({
 		"prettier", -- ts/js formatter
 		"stylua", -- lua formatter
 		"eslint_d", -- ts/js linter
-        "clang_format", -- c cpp cs java cuda
+		"clang_format", -- c cpp cs java cuda
 	},
 	-- auto-install configured formatters & linters (with null-ls)
 	automatic_installation = true,
