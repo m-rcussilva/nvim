@@ -68,7 +68,7 @@ return packer.startup(function(use)
 	use("jayp0521/mason-null-ls.nvim") -- Formating & Linting
 
 	use("ray-x/go.nvim") -- Go plugin
-	use("ray-x/guihua.lua") 
+	use("ray-x/guihua.lua")
 
 	if packer_bootstrap then
 		require("packer").sync()
